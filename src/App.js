@@ -1,25 +1,30 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Navbar from "./components/Navbar";
+
+const links = [
+  {
+    url: "#1",
+    description: "Link Fake 1"
+  },
+  {
+    url: "#2",
+    description: "Link Fake 2"
+  },
+  {
+    url: "#3",
+    description: "Link Fake 3"
+  },
+  {
+    url: "#4",
+    description: "Link Fake 4"
+  }
+];
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Navbar links={links} />
       </div>
     );
   }
