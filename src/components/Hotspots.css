@@ -1,0 +1,21 @@
+.HotSpot {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.HotSpot::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: 19px;
+  height: 19px;
+  border: 2px solid red;
+  border-radius: 50%;
+}

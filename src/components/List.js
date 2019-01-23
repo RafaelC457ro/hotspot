@@ -11,7 +11,10 @@ const List = ({ title, items }) => (
       <ul>
         {items.map(({ id, description }) => (
           <li className="List-item" key={id}>
-            {description}
+            <span>{description}</span>
+            <a className="List-delete" href="">
+              Delete
+            </a>
           </li>
         ))}
       </ul>

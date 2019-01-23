@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import List from "../components/List";
+import HostSpot from "../components/Hotspots";
 import "./App.css";
 
 const links = [
@@ -26,15 +27,15 @@ const links = [
 const items = [
   {
     id: "1",
-    description: "HostSpot 1"
+    description: "HostSpot #1"
   },
   {
     id: "2",
-    description: "HostSpot 2"
+    description: "HostSpot #2"
   },
   {
     id: "3",
-    description: "HostSpot 3"
+    description: "HostSpot #3"
   }
 ];
 
@@ -53,6 +54,7 @@ class App extends Component {
             <List title="List of hotspot" items={items} />
           </div>
         </div>
+        <HostSpot />
       </>
     );
   }

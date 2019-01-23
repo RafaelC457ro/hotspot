@@ -1,13 +1,34 @@
 .List {
-    width: 300px;
+  width: 300px;
 }
 
 .List-head {
-    height: 30px;
-    background-color: #eee;
-    color: #A0A0A0;
-    font-weight: 600;
-    font-size: 16px;
-    padding-left: 15px;
-    align-items: center;
+  height: 30px;
+  background-color: #eee;
+  color: #a0a0a0;
+  display: flex;
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 15px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.List-body ul {
+  padding: 0;
+  margin: 0;
+}
+
+.List-item {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  color: #a0a0a0;
+  font-weight: 600;
+}
+
+.List-delete {
+  color: #4a90e2;
 }
