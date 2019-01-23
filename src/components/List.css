@@ -1,0 +1,13 @@
+.List {
+    width: 300px;
+}
+
+.List-head {
+    height: 30px;
+    background-color: #eee;
+    color: #A0A0A0;
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 15px;
+    align-items: center;
+}

@@ -1,0 +1,16 @@
+.Button {
+    border-radius: 25px;
+    border: none;
+    padding: 5px;
+    display: inline-block;
+    padding: 8px 15px;
+}
+
+.Button--blue {
+    background-color: #0FC0C7;
+    color: #fff;
+}
+
+.Button--large {
+    font-size: 19px;
+}

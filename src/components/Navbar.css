@@ -1,0 +1,38 @@
+.Navbar {
+    align-items: center;
+    border-bottom: 1px solid #D5D5D5;
+    display: flex;
+    left: 0;
+    justify-content: center;
+    position: relative;
+    right: 0;
+    top: 0;
+    height: 70px;   
+}
+
+.Navbar-container {
+    display: flex;
+    flex-direction: row;
+    width: 960px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Navbar-menu {
+    margin-left: 40px; 
+}
+.Navbar-links {
+   margin-left: 20px;
+   color: #A0A0A0;
+   text-decoration: none;
+   font-weight: 500;
+}
+
+.Logo {
+    height: 30px;
+}
+
+
+
+
