@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDom from "react-dom";
+import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import "./Hotspots.css";
 
 const body = document.body;
 
-const HostSpot = ({ items }) =>
+const HostSpot = ({ hotspots }) =>
   ReactDom.createPortal(
-    items.map(item => (
+    hotspots.map(item => (
       <div
         className="HotSpot"
         key={item.id}
@@ -17,4 +18,10 @@ const HostSpot = ({ items }) =>
     body
   );
 
-export default HostSpot;
+const mapStateToProps = state => {
+  return {
+    hotspots: state.hotspots.items
+  };
+};
+
+export default connect(mapStateToProps)(HostSpot);
