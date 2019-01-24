@@ -2,6 +2,8 @@
 
 This application creates hotspots when you activate the capture.
 
+[DEMO](https://hotspot-challenge.netlify.com/)
+
 ## Available Scripts
 
 In the project directory, you can run:
