@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import hostspots from "./hotspots";
+import hotspots from "./hotspots";
 
-const hostspotApp = combineReducers({
-  hostspots: hostspots
+const reducers = combineReducers({
+  hotspots: hotspots
 });
 
-export default hostspotApp;
+export default reducers;

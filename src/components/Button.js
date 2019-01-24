@@ -2,8 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Button.css";
 
-const Button = ({ title }) => (
-  <button className="Button Button--blue Button--large" type="button">
+const Button = ({ title, onClick }) => (
+  <button
+    className="Button Button--blue Button--large"
+    type="button"
+    onClick={onClick}
+  >
     {title}
   </button>
 );

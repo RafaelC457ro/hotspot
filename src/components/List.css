@@ -9,7 +9,7 @@
   display: flex;
   font-weight: 600;
   font-size: 16px;
-  padding-left: 15px;
+  padding-left: 5px;
   align-items: center;
   justify-content: flex-start;
 }
@@ -29,6 +29,11 @@
   font-weight: 600;
 }
 
-.List-delete {
+.List-button--delete {
+  background: none;
+  border: none;
   color: #4a90e2;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 600;
 }

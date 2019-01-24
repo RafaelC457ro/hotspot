@@ -1,7 +1,6 @@
 .HotSpot {
+  display: none;
   position: absolute;
-  top: 100px;
-  left: 100px;
   background-color: red;
   width: 15px;
   height: 15px;
