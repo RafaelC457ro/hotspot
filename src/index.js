@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
+import { compose, createStore } from "redux";
+import persistState from "redux-localstorage";
 import hotspotApp from "./reducers";
 import "./index.css";
 import App from "./containers/App";
 
-const store = createStore(hotspotApp);
+const enhancer = compose(persistState(null, { key: "hostspots" }));
+const store = createStore(hotspotApp, enhancer);
 
 ReactDOM.render(
   <Provider store={store}>

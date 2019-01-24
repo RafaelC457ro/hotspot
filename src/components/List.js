@@ -11,9 +11,9 @@ const List = ({ hotspots, handleDeleteClick }) => (
     </div>
     <div className="List-body">
       <ul>
-        {hotspots.map(({ id }) => (
+        {hotspots.map(({ id }, index) => (
           <li className="List-item" key={id}>
-            <span>Hotspot #{id}</span>
+            <span>Hotspot #{index + 1}</span>
             <button
               className="List-button--delete"
               onClick={handleDeleteClick(id)}
@@ -30,7 +30,7 @@ const List = ({ hotspots, handleDeleteClick }) => (
 List.propTypes = {
   hotspots: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number
+      id: PropTypes.string
     })
   ),
   handleDeleteClick: PropTypes.func.isRequired

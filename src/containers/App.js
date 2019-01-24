@@ -60,7 +60,7 @@ const mapDispatchToProps = dispatch => {
         return;
       }
       const { width, height, x, y } = event.target.getBoundingClientRect();
-      if (event.target.id == "mask") return;
+      if (event.target.id === "mask") return;
       const mask = {
         height,
         width,

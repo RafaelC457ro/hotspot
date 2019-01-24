@@ -1,4 +1,5 @@
 import { UPDATE_MASK, HIDE_MASK } from "../constants/mask";
+
 const initialState = {
   visible: false,
   height: 0,

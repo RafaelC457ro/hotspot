@@ -9,6 +9,12 @@ const initialState = {
   items: []
 };
 
+const genId = () => {
+  return Math.random()
+    .toString(36)
+    .substr(2, 9);
+};
+
 const hostspots = (state = initialState, action) => {
   switch (action.type) {
     case ADDING_MODE:
@@ -20,7 +26,7 @@ const hostspots = (state = initialState, action) => {
         isAddingMode: false,
         items: [
           ...state.items,
-          Object.assign({}, action.hostspot, { id: state.items.length + 1 })
+          Object.assign({}, action.hostspot, { id: genId() })
         ]
       };
     case REMOVE_HOSPOT:

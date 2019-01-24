@@ -18,6 +18,10 @@ const HostSpot = ({ hotspots }) =>
     body
   );
 
+HostSpot.propTypes = {
+  hotspots: PropTypes.arrayOf(PropTypes.object)
+};
+
 const mapStateToProps = state => {
   return {
     hotspots: state.hotspots.items
