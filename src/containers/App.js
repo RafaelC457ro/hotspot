@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 import Button from "../components/Button";
 import List from "../components/List";
 import HostSpot from "../components/Hotspots";
@@ -9,34 +9,13 @@ import { addHotspot, activateAddMode } from "../actions/hotspots";
 import { updateMask } from "../actions/mask";
 import "./App.css";
 
-const links = [
-  {
-    url: "#1",
-    description: "Link Fake 1"
-  },
-  {
-    url: "#2",
-    description: "Link Fake 2"
-  },
-  {
-    url: "#3",
-    description: "Link Fake 3"
-  },
-  {
-    url: "#4",
-    description: "Link Fake 4"
-  }
-];
-
 const App = ({ isAddingMode, handleClick, handleAddMode, handleMouseMove }) => (
   <div
     className="App"
     onClick={handleClick(isAddingMode)}
     onMouseMove={handleMouseMove(isAddingMode)}
   >
-    <header>
-      <Navbar links={links} />
-    </header>
+    <Header />
     <div className="Container">
       <div className="Container-content">
         <div className="Container-action">
