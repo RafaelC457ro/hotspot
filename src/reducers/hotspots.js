@@ -74,7 +74,6 @@ const hostspots = (state = initialState, action) => {
       return Object.assign({}, state, {
         items: state.items.map(item => {
           if (item.id === action.item.id) {
-            console.log("mudei");
             return Object.assign({}, item, {
               showPopper: true
             });
