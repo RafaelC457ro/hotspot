@@ -5,7 +5,11 @@ import Button from "../components/Button";
 import List from "../components/List";
 import HostSpot from "../components/Hotspots";
 import Mask from "../components/Mask";
-import { addHotspot, activateAddMode } from "../actions/hotspots";
+import {
+  addHotspot,
+  activateAddMode,
+  closeAllPoppers
+} from "../actions/hotspots";
 import { updateMask } from "../actions/mask";
 import "./App.css";
 
@@ -40,6 +44,8 @@ const mapDispatchToProps = dispatch => {
   return {
     handleClick: isAddingMode => event => {
       const { pageX: x, pageY: y } = event;
+
+      dispatch(closeAllPoppers());
 
       if (!isAddingMode) {
         return;

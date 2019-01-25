@@ -1,11 +1,10 @@
 .HotSpot {
   display: none;
   position: absolute;
-  background-color: red;
+  background-color: rgb(232, 44, 12, 0.4);
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  opacity: 0.4;
 }
 
 .HotSpot::before {
@@ -15,6 +14,19 @@
   top: -4px;
   width: 19px;
   height: 19px;
-  border: 2px solid red;
+  border: 2px solid rgb(232, 44, 12, 0.4);
   border-radius: 50%;
+}
+
+.Hotspot-title {
+  margin-bottom: 15px;
+}
+
+.Hotspot-input {
+  background-color: transparent;
+  border: 0px solid;
+}
+
+.Hotspot-input--title {
+  font-size: 20px;
 }

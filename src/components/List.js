@@ -11,9 +11,9 @@ const List = ({ hotspots, handleDeleteClick }) => (
     </div>
     <div className="List-body">
       <ul>
-        {hotspots.map(({ id }, index) => (
+        {hotspots.map(({ id, title }, index) => (
           <li className="List-item" key={id}>
-            <span>Hotspot #{index + 1}</span>
+            <span>{title}</span>
             <button
               className="List-button--delete"
               onClick={handleDeleteClick(id)}
