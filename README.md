@@ -1,4 +1,4 @@
-# Canpass Hotspots Frontend-Challenge
+# Compass Hotspots Frontend-Challenge
 
 This application creates hotspots when you activate the capture.
 
